@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+<div id="menuall">
+    <a href="#menu" onclick="desapamenu()"><span id="textolinkinfo">Informaçoes</span></a>
+  <div id="menu">
+    <ul>
+      <a href="#menu2"><ul id="textolink" onclick="desapamenu2()">Custo</ul></a>
+      <div id="menu2">
+        <li>industria:100</li>
+        <li>Hospital:50</li>
+        <li>Antipoluidor:500</li>
+      </div>
+    </ul>
+  </div>
+</div>
+  <div id="circulo" class="circulo"></div>
+  <div class="info-pais">
+    <p><span></span> <span id="dinheiro" class="info"></span></p>
+    <p><span></span> <span id="saude" class="info"></span></p>
+    <p><span></span> <span id="economia" class="info"></span></p>
+    <p><span></span> <span id="hospitais" class="info"></span></p>     
+    <p><span></span> <span id="industrias" class="info"></span></p>
+    <p><span></span> <span id="poluicao" class="info"></span></p>
+    <p><span></span> <span id="felicidade" class="info"></span></p>
+    <p id="ant" class="ant"></p>
+  </div>
+  <div class="buttons">
+    <button id="btn-construir" onclick="construirIndustria()">Construir indústrias</button>
+    <button id="btn-hospital" onclick="construirHospitais()">Construir hospitais</button>
+    <button id="btn-antpoluidores" onclick="construirAntipoluidor()">Construir Antipoluidor</button>
+    <button id="salvar" onclick="salvar()">Salvar</button>
+    <button id="btn-reiniciar" onclick="reiniciar()">Reiniciar</button>
+    <div class="autocomplete">
+      <label for="inputText">Escolha Sua Lei</label><br><br>
+      <input type="text" id="inputText" name="inputText">
+      </div>
+  </div>
+  <a href="Tutorial.html"><button class="glow-on-hover" type="button">Tutorial</button></a>
+   <script src="script.js"></script>
+</body>
+</html>
